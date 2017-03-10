@@ -40,7 +40,7 @@ public class Grafica extends javax.swing.JFrame {
         CuadroDeTexto = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1000, 1000));
+        setPreferredSize(new java.awt.Dimension(370, 450));
 
         Boton1.setBackground(java.awt.Color.white);
         Boton1.setFont(new java.awt.Font("Purisa", 0, 36)); // NOI18N
