@@ -27,7 +27,7 @@ public class Grafica extends javax.swing.JFrame {
         CuadroDeTexto = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(370, 450));
+        setPreferredSize(new java.awt.Dimension(370, 530));
 
         Boton1.setBackground(java.awt.Color.white);
         Boton1.setFont(new java.awt.Font("Purisa", 0, 36)); // NOI18N
@@ -43,41 +43,81 @@ public class Grafica extends javax.swing.JFrame {
         Boton2.setFont(new java.awt.Font("Purisa", 0, 36)); // NOI18N
         Boton2.setToolTipText("");
         Boton2.setBorder(null);
+        Boton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton2MouseClicked(evt);
+            }
+        });
 
         Boton3.setBackground(java.awt.Color.white);
         Boton3.setFont(new java.awt.Font("Purisa", 0, 36)); // NOI18N
         Boton3.setToolTipText("");
         Boton3.setBorder(null);
+        Boton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton3MouseClicked(evt);
+            }
+        });
 
         Boton4.setBackground(java.awt.Color.white);
         Boton4.setFont(new java.awt.Font("Purisa", 0, 36)); // NOI18N
         Boton4.setToolTipText("");
         Boton4.setBorder(null);
+        Boton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton4MouseClicked(evt);
+            }
+        });
 
         Boton5.setBackground(java.awt.Color.white);
         Boton5.setFont(new java.awt.Font("Purisa", 0, 36)); // NOI18N
         Boton5.setToolTipText("");
         Boton5.setBorder(null);
+        Boton5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton5MouseClicked(evt);
+            }
+        });
 
         Boton6.setBackground(java.awt.Color.white);
         Boton6.setFont(new java.awt.Font("Purisa", 0, 36)); // NOI18N
         Boton6.setToolTipText("");
         Boton6.setBorder(null);
+        Boton6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton6MouseClicked(evt);
+            }
+        });
 
         Boton7.setBackground(java.awt.Color.white);
         Boton7.setFont(new java.awt.Font("Purisa", 0, 36)); // NOI18N
         Boton7.setToolTipText("");
         Boton7.setBorder(null);
+        Boton7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton7MouseClicked(evt);
+            }
+        });
 
         Boton8.setBackground(java.awt.Color.white);
         Boton8.setFont(new java.awt.Font("Purisa", 0, 36)); // NOI18N
         Boton8.setToolTipText("");
         Boton8.setBorder(null);
+        Boton8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton8MouseClicked(evt);
+            }
+        });
 
         Boton9.setBackground(java.awt.Color.white);
         Boton9.setFont(new java.awt.Font("Purisa", 0, 36)); // NOI18N
         Boton9.setToolTipText("");
         Boton9.setBorder(null);
+        Boton9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Boton9MouseClicked(evt);
+            }
+        });
 
         Etiqueta.setBackground(java.awt.Color.blue);
         Etiqueta.setFont(new java.awt.Font("Purisa", 0, 36)); // NOI18N
@@ -162,6 +202,103 @@ public class Grafica extends javax.swing.JFrame {
     }
     }//GEN-LAST:event_Boton1MouseClicked
 
+    private void Boton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton2MouseClicked
+    if(Turno==0){
+        Boton2.setText("X");
+        Turno=1;
+        miTablero.Ficha[0][1]=0;
+    }else{
+        Boton2.setText("O");
+        Turno=0;
+        miTablero.Ficha[0][1]=1;
+    }
+    }//GEN-LAST:event_Boton2MouseClicked
+
+    private void Boton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton3MouseClicked
+    if(Turno==0){
+        Boton3.setText("X");
+        Turno=1;
+        miTablero.Ficha[0][2]=0;
+    }else{
+        Boton3.setText("O");
+        Turno=0;
+        miTablero.Ficha[0][2]=1;
+    }
+    }//GEN-LAST:event_Boton3MouseClicked
+
+    private void Boton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton4MouseClicked
+    if(Turno==0){
+        Boton4.setText("X");
+        Turno=1;
+        miTablero.Ficha[1][0]=0;
+    }else{
+        Boton4.setText("O");
+        Turno=0;
+        miTablero.Ficha[1][0]=1;
+    }
+    }//GEN-LAST:event_Boton4MouseClicked
+
+    private void Boton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton5MouseClicked
+    if(Turno==0){
+        Boton5.setText("X");
+        Turno=1;
+        miTablero.Ficha[1][1]=0;
+    }else{
+        Boton5.setText("O");
+        Turno=0;
+        miTablero.Ficha[1][1]=1;
+    }
+    }//GEN-LAST:event_Boton5MouseClicked
+
+    private void Boton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton6MouseClicked
+    if(Turno==0){
+        Boton6.setText("X");
+        Turno=1;
+        miTablero.Ficha[1][2]=0;
+    }else{
+        Boton6.setText("O");
+        Turno=0;
+        miTablero.Ficha[1][2]=1;
+    }
+    }//GEN-LAST:event_Boton6MouseClicked
+
+    private void Boton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton7MouseClicked
+    if(Turno==0){
+        Boton7.setText("X");
+        Turno=1;
+        miTablero.Ficha[2][0]=0;
+    }else{
+        Boton7.setText("O");
+        Turno=0;
+        miTablero.Ficha[2][0]=1;
+    }
+    }//GEN-LAST:event_Boton7MouseClicked
+
+    private void Boton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton8MouseClicked
+    if(Turno==0){
+        Boton8.setText("X");
+        Turno=1;
+        miTablero.Ficha[2][1]=0;
+    }else{
+        Boton8.setText("O");
+        Turno=0;
+        miTablero.Ficha[2][1]=1;
+    }
+    }//GEN-LAST:event_Boton8MouseClicked
+
+    private void Boton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton9MouseClicked
+    if(Turno==0){
+        Boton9.setText("X");
+        Turno=1;
+        miTablero.Ficha[2][2]=0;
+    }else{
+        Boton9.setText("O");
+        Turno=0;
+        miTablero.Ficha[2][2]=1;
+    }
+    }//GEN-LAST:event_Boton9MouseClicked
+ 
+    
     public static void main(String args[]) {
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
