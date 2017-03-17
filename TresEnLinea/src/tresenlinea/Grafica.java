@@ -2,8 +2,11 @@ package tresenlinea;
 
 public class Grafica extends javax.swing.JFrame {
 
-    public int Turno;
     Tablero miTablero=new Tablero();
+    public int Turno;
+    
+    
+    
     
     public Grafica() {
         
@@ -27,7 +30,7 @@ public class Grafica extends javax.swing.JFrame {
         CuadroDeTexto = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(370, 530));
+        setPreferredSize(new java.awt.Dimension(370, 455));
 
         Boton1.setBackground(java.awt.Color.white);
         Boton1.setFont(new java.awt.Font("Purisa", 0, 36)); // NOI18N
@@ -194,110 +197,121 @@ public class Grafica extends javax.swing.JFrame {
     if(Turno==0){
         Boton1.setText("X");
         Turno=1;
-        miTablero.Ficha[0][0]=0;
+        miTablero.Ficha[0][0]=1;
     }else{
         Boton1.setText("O");
         Turno=0;
-        miTablero.Ficha[0][0]=1;
+        miTablero.Ficha[0][0]=2;
     }
+    miTablero.CalcularTriqui();
     }//GEN-LAST:event_Boton1MouseClicked
 
+ 
     private void Boton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton2MouseClicked
     if(Turno==0){
         Boton2.setText("X");
         Turno=1;
-        miTablero.Ficha[0][1]=0;
+        miTablero.Ficha[0][1]=1;
     }else{
         Boton2.setText("O");
         Turno=0;
-        miTablero.Ficha[0][1]=1;
+        miTablero.Ficha[0][1]=2;
     }
+    miTablero.CalcularTriqui();
     }//GEN-LAST:event_Boton2MouseClicked
 
     private void Boton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton3MouseClicked
     if(Turno==0){
         Boton3.setText("X");
         Turno=1;
-        miTablero.Ficha[0][2]=0;
+        miTablero.Ficha[0][2]=1;
     }else{
         Boton3.setText("O");
         Turno=0;
-        miTablero.Ficha[0][2]=1;
+        miTablero.Ficha[0][2]=2;
     }
+    miTablero.CalcularTriqui();
     }//GEN-LAST:event_Boton3MouseClicked
 
     private void Boton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton4MouseClicked
     if(Turno==0){
         Boton4.setText("X");
         Turno=1;
-        miTablero.Ficha[1][0]=0;
+        miTablero.Ficha[1][0]=1;
     }else{
         Boton4.setText("O");
         Turno=0;
-        miTablero.Ficha[1][0]=1;
+        miTablero.Ficha[1][0]=2;
     }
+    miTablero.CalcularTriqui();
     }//GEN-LAST:event_Boton4MouseClicked
 
     private void Boton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton5MouseClicked
     if(Turno==0){
         Boton5.setText("X");
         Turno=1;
-        miTablero.Ficha[1][1]=0;
+        miTablero.Ficha[1][1]=1;
     }else{
         Boton5.setText("O");
         Turno=0;
-        miTablero.Ficha[1][1]=1;
+        miTablero.Ficha[1][1]=2;
     }
+    miTablero.CalcularTriqui();
     }//GEN-LAST:event_Boton5MouseClicked
 
     private void Boton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton6MouseClicked
     if(Turno==0){
         Boton6.setText("X");
         Turno=1;
-        miTablero.Ficha[1][2]=0;
+        miTablero.Ficha[1][2]=1;
     }else{
         Boton6.setText("O");
         Turno=0;
-        miTablero.Ficha[1][2]=1;
+        miTablero.Ficha[1][2]=2;
     }
+    miTablero.CalcularTriqui();
     }//GEN-LAST:event_Boton6MouseClicked
 
     private void Boton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton7MouseClicked
     if(Turno==0){
         Boton7.setText("X");
         Turno=1;
-        miTablero.Ficha[2][0]=0;
+        miTablero.Ficha[2][0]=1;
     }else{
         Boton7.setText("O");
         Turno=0;
-        miTablero.Ficha[2][0]=1;
+        miTablero.Ficha[2][0]=2;
     }
+    miTablero.CalcularTriqui();
     }//GEN-LAST:event_Boton7MouseClicked
 
     private void Boton8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton8MouseClicked
     if(Turno==0){
         Boton8.setText("X");
         Turno=1;
-        miTablero.Ficha[2][1]=0;
+        miTablero.Ficha[2][1]=1;
     }else{
         Boton8.setText("O");
         Turno=0;
-        miTablero.Ficha[2][1]=1;
+        miTablero.Ficha[2][1]=2;
     }
+    miTablero.CalcularTriqui();
     }//GEN-LAST:event_Boton8MouseClicked
 
     private void Boton9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Boton9MouseClicked
     if(Turno==0){
         Boton9.setText("X");
         Turno=1;
-        miTablero.Ficha[2][2]=0;
+        miTablero.Ficha[2][2]=1;
     }else{
         Boton9.setText("O");
         Turno=0;
-        miTablero.Ficha[2][2]=1;
+        miTablero.Ficha[2][2]=2;
     }
+    miTablero.CalcularTriqui();
     }//GEN-LAST:event_Boton9MouseClicked
  
+    
     
     public static void main(String args[]) {
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
